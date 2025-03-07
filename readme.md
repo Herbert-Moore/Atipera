@@ -19,8 +19,7 @@ This is a simple Spring Boot API that lists all non-forked repositories of a giv
 
 1. Clone the repository
    ```sh
-   git clone https://github.com/your-username/github-repos-api.git
-   cd github-repos-api
+   https://github.com/Herbert-Moore/Atipera.git
 
 2. Run the application
    mvn spring-boot:run

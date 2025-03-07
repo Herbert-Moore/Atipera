@@ -79,7 +79,7 @@ public class AtiperaApplication {
 
         @Test
         void shouldFetchUserRepositories() {
-            String username = "{username}";
+            String username = "Herbert-Moore";
             ResponseEntity<String> response = restTemplate.getForEntity("http://localhost:" + port + "/github/users/" + username + "/repos", String.class);
 
             assertThat(response.getStatusCodeValue()).isEqualTo(200);
@@ -88,7 +88,7 @@ public class AtiperaApplication {
 
         @Test
         void shouldReturn404ForNonExistingUser() {
-            String username = "{username}";
+            String username = "Non-Existing-User";
             ResponseEntity<String> response = restTemplate.getForEntity("http://localhost:" + port + "/github/users/" + username + "/repos", String.class);
 
             assertThat(response.getStatusCodeValue()).isEqualTo(404);
